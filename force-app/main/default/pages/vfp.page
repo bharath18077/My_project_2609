@@ -1,0 +1,8 @@
+<apex:page >
+ 
+  <h1>Congratulations</h1>
+  This is your new Page: vfp<br/><br/>
+  <i>This is my first visual force page created by using url format</i>
+  <br/><br/><b>hello world</b> 
+  
+</apex:page>

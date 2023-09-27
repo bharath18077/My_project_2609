@@ -1,0 +1,4 @@
+<apex:page standardcontroller="Account" setup="false"> sidebar = "false" showheader = "true" tabstyle = "contact">
+    <apex:detail title="false" />
+    	<apex:relatedList list="contact"/>
+</apex:page>

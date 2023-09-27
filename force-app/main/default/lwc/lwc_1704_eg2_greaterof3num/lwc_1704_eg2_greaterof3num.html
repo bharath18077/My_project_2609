@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="greater of three numbers">
+        <lightning-input label="enter first number" onchange={fnum}></lightning-input>
+        <lightning-input label="enter second number" onchange={snum}></lightning-input>
+        <lightning-input label=" enter third numbert" onchange={tnum}></lightning-input>
+        <lightning-button-group>
+            <lightning-button label="calculate" onclick={calcme} variant="brand" ></lightning-button>
+            <lightning-button label="clear" onclick={clearme} variant="destructive"></lightning-button>
+        </lightning-button-group>
+    <p><b>The greater of 3 numbers is : {result}</b></p>
+
+    </lightning-card>
+</template>

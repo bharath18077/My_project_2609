@@ -1,0 +1,28 @@
+<apex:page standardController="account" setup="false" sidebar="true" tabStyle="account" showHeader="true" showChat="true" >
+    <apex:sectionHeader title="accout record" subtitle="new acc record" rendered="true"/>/>
+          <apex:form >
+               <apex:pageBlock title="account block" >
+                   <apex:pageBlockButtons location="both">
+                       <apex:commandButton value="save record" action="{!save}"/>
+                       <apex:commandButton value="cancel record" action="{!cancel}"/>
+                   </apex:pageBlockButtons>
+                        <apex:pageblockSection title="account info" columns="2" collapsible="true" >
+                            <apex:inputfield value="{!account.name}"/>
+                            <apex:inputfield value="{!account.rating}" required="true"/>
+                            <apex:inputfield value="{!account.phone}"/>
+                            <apex:inputfield value="{!account.fax}"/>
+                        </apex:pageblockSection>
+                         <apex:pageblockSection title="address info" columns="2" collapsible="true" >
+                             <apex:inputfield value="{!account.billingcity}"/>
+                             <apex:inputfield value="{!account.billingstreet}"/>
+                             <apex:inputfield value="{!account.billingcountry}"/>
+                        </apex:pageblockSection>
+                         <apex:pageblockSection title="additional info" columns="2" collapsible="true" >
+                         
+                         
+                        </apex:pageblockSection>
+    
+    </apex:pageBlock>
+    </apex:form>>
+  
+</apex:page>

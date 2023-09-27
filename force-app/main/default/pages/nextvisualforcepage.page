@@ -1,0 +1,36 @@
+<apex:page standardController="account" sidebar="false" setup="false" tabStyle="contact" showHeader="true" >
+  <apex:sectionHeader title="account edit" subtitle="new account record" />
+  <apex:form >
+          <apex:pageBlock title="account block" >
+              <apex:pageblockbuttons rendered="true" location="top" >
+                  <apex:commandbutton value="save" action="{! save}"  />
+                  <apex:commandButton value="cancel record" action="{!cancel}"/>
+              </apex:pageblockbuttons>
+              <apex:pageblocksection title="account infomation" columns="2" collapsible="true">
+                  <apex:inputfield value="{!account.name}" />
+                  <apex:inputfield value="{!account.fax}" />
+                  <apex:inputfield value="{!account.type}" />
+                  <apex:inputfield value="{! account.phone}" />
+                  
+              
+                  <apex:inputfield value="{!account.industry}" />
+              </apex:pageblocksection>
+              <apex:pageblockSection title="address information" columns="3" collapsible="true">
+                  <apex:inputfield value="{!account.billingcity}" />
+                  <apex:inputfield value="{!account.billingstate}" />
+                  <apex:inputfield value="{!account.billingcountry}" />
+                  <apex:inputfield value="{!account.billingstreet}" />
+              </apex:pageblockSection>
+               <apex:pageblockSection title="additional information" columns="3" collapsible="true">
+                  
+                  <apex:inputfield value="{!account.CustomerPriority__c}" />
+                  <apex:inputfield value="{!account.Active__c}" />
+                  <apex:inputfield value="{!account.billingstreet}" />
+              </apex:pageblockSection>
+              
+              
+              
+          </apex:pageBlock>
+      </apex:form>
+      
+</apex:page>
